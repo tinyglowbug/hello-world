@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>Untitled</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article data-line-1">
+<div id="header">
+</div>
+<div id="content">
+<div class="paragraph data-line-1">
+<p>%PDF-1.4
+%����
+1 0 obj
+&lt;&lt;
+/Type /Catalog
+/Pages 2 0 R
+&gt;&gt;
+endobj
+3 0 obj
+&lt;&lt;
+/Creator (Canva)
+/Producer (Canva)
+/CreationDate (D:20200206171944+00'00')
+/ModDate (D:20200206171944+00'00')
+/Keywords (DADS00F-Zaw,BACbewEmFwQ)
+/Author (Brooke Ann Van Sickle)
+/Title (Lead Magnet Templates)
+&gt;&gt;
+endobj
+2 0 obj
+&lt;&lt;
+/Type /Pages
+/Count 2
+/Kids [4 0 R 5 0 R]
+&gt;&gt;
+endobj
+4 0 obj
+&lt;&lt;
+/Type /Page
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+/G5 7 0 R
+/G11 8 0 R
+&gt;&gt;
+/XObject &lt;&lt;
+/X6 9 0 R
+/X7 10 0 R
+/X8 11 0 R
+/X9 12 0 R
+/X12 13 0 R
+&gt;&gt;
+/Font &lt;&lt;
+/F4 14 0 R
+/F10 15 0 R
+&gt;&gt;
+&gt;&gt;
+/MediaBox [0.0 7.9200063 612.0 799.92]
+/Contents 16 0 R
+/StructParents 0
+/Parent 2 0 R
+/BleedBox [0.0 7.9200063 612.0 799.92]
+/TrimBox [0.0 7.9200063 612.0 799.92]
+&gt;&gt;
+endobj
+5 0 obj
+&lt;&lt;
+/Type /Page
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+/G11 8 0 R
+&gt;&gt;
+/XObject &lt;&lt;
+/X17 17 0 R
+&gt;&gt;
+/Font &lt;&lt;
+/F4 14 0 R
+/F15 18 0 R
+/F16 19 0 R
+&gt;&gt;
+&gt;&gt;
+/MediaBox [0.0 7.9200063 612.0 799.92]
+/Contents 20 0 R
+/StructParents 1
+/Parent 2 0 R
+/BleedBox [0.0 7.9200063 612.0 799.92]
+/TrimBox [0.0 7.9200063 612.0 799.92]
+&gt;&gt;
+endobj
+6 0 obj
+&lt;&lt;
+/ca 1
+/BM /Normal
+&gt;&gt;
+endobj
+7 0 obj
+&lt;&lt;
+/ca .2784
+/BM /Normal
+&gt;&gt;
+endobj
+8 0 obj
+&lt;&lt;
+/ca .4667
+/BM /Normal
+&gt;&gt;
+endobj
+9 0 obj
+&lt;&lt;
+/Length 131
+/Type /XObject
+/Subtype /Form
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+&gt;&gt;
+&gt;&gt;
+/BBox [0 0 2123 2055]
+/Group &lt;&lt;
+/Type /Group
+/S /Transparency
+/I true
+&gt;&gt;
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�e���@C�|�g$���%<em>�&gt; A'�Z�</em>�P	��~���3[�T�H��P�
+Go��\-Ӱ��z���A��"(C{ڇ��9���'q�Z�Y2���	l��4)�7�'T���n4� [����9} ��)�
+endstream
+endobj
+10 0 obj
+&lt;&lt;
+/Length 127
+/Type /XObject
+/Subtype /Form
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+&gt;&gt;
+&gt;&gt;
+/BBox [0 0 2123 2123]
+/Group &lt;&lt;
+/Type /Group
+/S /Transparency
+/I true
+&gt;&gt;
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�e�=�P����3C��k�N���H-��x]@y�?9�Jlb!Y�j��
+SS�l���]x�J��M2�M�/����qv3p�^�j��?�-t�ˋb�p�+���z�����o�4���(�
+endstream
+endobj
+11 0 obj
+&lt;&lt;
+/Length 128
+/Type /XObject
+/Subtype /Form
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+&gt;&gt;
+&gt;&gt;
+/BBox [0 0 2123 2123]
+/Group &lt;&lt;
+/Type /Group
+/S /Transparency
+/I true
+&gt;&gt;
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�e�;�@C�9�k�av&gt;��'H</p>
+</div>
+<div class="paragraph data-line-171">
+<p>@�
+���Kl�D���,{!VQ�����"�-Z8[�����Nx�B���B
+d�H�
+ר=��q��.=��	l��&lt;�y�0����������s���(�
+endstream
+endobj
+12 0 obj
+&lt;&lt;
+/Length 127
+/Type /XObject
+/Subtype /Form
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+&gt;&gt;
+&gt;&gt;
+/BBox [0 0 2123 1445]
+/Group &lt;&lt;
+/Type /Group
+/S /Transparency
+/I true
+&gt;&gt;
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�e���@C�|�g���r��t��@�	�����.��b?Y�Blb.�����<code>j�.��b}��7-�l^��B��t�pT�0o���ǚ���gU\'��u��T0�[G)(
+/��&gt;i�A��<mark>��\��ĥ(X
+endstream
+endobj
+13 0 obj
+&lt;&lt;
+/Length 408
+/Type /XObject
+/Subtype /Form
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+&gt;&gt;
+/Font &lt;&lt;
+/F10 15 0 R
+&gt;&gt;
+&gt;&gt;
+/BBox [0 0 1764 79]
+/Group &lt;&lt;
+/Type /Group
+/S /Transparency
+/I true
+&gt;&gt;
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��T�N�0��+��~�-��f���$$����V��d�4���쮮���$�п鯨��枑�q3͏o���B�(����&gt;����%]�s~��n�t}@��
+W �&lt;&lt;'��0[�����n H~��5uF4Q��9����<strong>�2 &lt;\</strong>���	`�H��U��K������⍪ز<sub>;��R���</sub>��H-D���x ����׏�("$X&gt;9�s��p�q��7$�&amp;jI="N`tY�N&gt;j��^�.��ݬQ�]ZW����P=FG&gt;�]0�X�:.���\~&lt;�\Ʋ?�!
+�&gt;��P�b��畏a�0�gڱՏ��ՀC�:]G��o�¿� �R��$˺����\��&lt;^k</code>[��4H��G�ߜ�a�G$<em>�J�D�wVBKl���6X</mark>�ү�"r�
+endstream
+endobj
+14 0 obj
+&lt;&lt;
+/Type /Font
+/Subtype /Type0
+/BaseFont /Raleway-Regular
+/Encoding /Identity-H
+/DescendantFonts [21 0 R]
+/ToUnicode 22 0 R
+&gt;&gt;
+endobj
+15 0 obj
+&lt;&lt;
+/Type /Font
+/Subtype /Type0
+/BaseFont /Lato-Regular
+/Encoding /Identity-H
+/DescendantFonts [23 0 R]
+/ToUnicode 24 0 R
+&gt;&gt;
+endobj
+16 0 obj
+&lt;&lt;
+/Length 2668
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��\�n�}�W�s��YU�A �Z�y�{6���� ��r�MN���$�h,9�Z�&lt;���U��{lX��g����toc�&amp;S�i�ۗ�ݕu��N"B���������XCx</em>&gt;�����ϟ?Nˋ�~�{�Q���=�(LL�嘟NW���\�?��v
+s$��fZ�;&lt;M9�)�D�v�0b(Y7� Qf~6�W��J$�e&amp;��	�:���b9%�B��vy;�������<em>�A)��y<sub>�N�����</sub>9i�C4n�ʼ����-y�x�v�wU�3V�I������H)X����]���8h�B�R46�(G������7y�&gt;�tG��Ҕ��"���/w��ӟ�O��	�Ύ���	���<code>�P�3cu�q^ ��K�n�vYq�����T�V��-	�s�uGn�=;+��</code>�/�0L�0hl��y���g[^wȲC�˫$��8���ؕF&lt;���܇�v4&gt;�^�:q��"�XaE'W�4/�hbJ���w��u���$'��0�`���u��� �s���4{��j�$��t��/���az����sG��3�ë����[)s���~~q���8uNƽ�#���&lt;,"��C��j�����x�늸�ȧ����6}
+W����8����r�R�Y�جR\&gt;�З�V�u�9-�Ns1�|oπγ�+9 
+��2���ơm�&gt;����(H�/ә*&amp;���O�*��l���nU����ar)m"$��?�ھ���|�l 1��7G�u���Kd�'��tZt�D:k��i�zM�=u�7cľ���V�M�h�Kp
+gц�U����p)����V����'��8��<code>���=xi��&amp;����)T� c����:�.�2���ej���7�ڃ��iw������ϳ&#8217;D���fOH;���@��;Nb��hV�%�S�)��Y���+O�����O��2@sH�</code>���1���Z0`6!���\8���X
+�C5����/�!r�f�8��%��"�� [��ؒF�CI�^@�����g��M���=<mark>b/Ox�p��/|&lt;D</em>�v�f�rR ���
+zj4�8�jv��mkX&gt;��λ��=e!�`�ի�`���+K�mOM�
+�c�ݳ�q�	I���a�K��'��-���V���ܷ�����&lt;��tu*�F����[�p7��q���'���=ʥ&gt;~ux�D��;��
+@��3�.D�+zL����܀�[�qÄ*&amp;�1-tgQt�p&gt;�`#�|s3���|�D#�gZ-^3�P[���!}�x*@��5-�&amp;��G_z3� ���2�&gt;d
+t&amp;��,��	�8I��I
+$�FΡbgg����n�e�K|��P����n���h��	��z�C;e/K��u*7e̵-���΁}�!g��- 候n��:�����?n��z�5��w/.�/mK@ϼK�dy_�֌&lt;h�,[���=3I��G�{�a�zc_u�,e�m�*c����O_�=l��,��v��</mark>�;�8u���m�0�P��E��ߣ�%�[r#Q�����}�}ˇ������� <strong>����� �sGc,�7��o�s�9�I�vǼ�ߡ�е8捴�<sup>��j�s����W��<em>M+:Ǉ��q,�uGmSZ��Tz�T��K��&amp;ժ�F��Mg�O#q���}h]4�2ڸ�8�<code>1W�</sup>�T�pS���B7d�Ϋqw�l���?�q�.�'}-�3�
+���V��P� ï�A�q��8]A�p������^ע</strong>��&gt;�
+���㲫8m�p����������x
+b���p�ޟ�w�4:��&gt;�}��
+���\��w��D��c��ن��g X2��Y��2�� �D�7V��XZ�n�R�S&lt;sDm&gt;�6�9��1"5g����G!��.בWq�����+�x��@�$t#2]@��Zb��+M�Ј�ȅx�2�]�����VG��c
+�vm=
+2X��]���U,9`Wݎ����۹��%�=4O|�J;*Gv}¼�;B���l~��9��T�u5�R]TW���^E�-e =K?��h��	�zD�:�� �AqI�A�J��&amp; U| x+I��GHsE5�
+Ix������]���0���;ze�n��{�Ʈ��Jx�/�xh!�8��0����Zo���P�1t�Zԉ��\��7�g�O��Îx�/��xB���Dj��:Z�v��Q��ao���A��r�r^�����cQ=$�'�fb���8R��PiP�;��1��oَ<mark>�+��V�j��%�{�}{i/���-џ*�v��B�7���
+�T���� �{L��&amp;�:��-U7'R���<strong>�uC�� W�:{]����o����Ab��t�)J</strong>�)M���'&gt;&amp;K�	�g���cT���)�`B�&lt;ir@�9}�w��"%�{����k��)e���V�m1�"���n�nL#U����x.&lt;<sup>���W����J��x����R�v�}�ޠgU�</code>��&lt;�/�R�/�j��l����@L�[b�7IW�K</sup>���L�2�^�1ע���z'�%�FXh6�ihr�24��yvO�-4�gد������u#s���~x�1���
+��^c�2ԥi����o�Z��f=R�X�M8oɕJ\ˡǕ8�{⪓w!������뱆O����?�rh�ee�ƛ��{Rj]=\����o�v��0���:��m�~���~���Z��
+endstream
+endobj
+17 0 obj
+&lt;&lt;
+/Length 412
+/Type /XObject
+/Subtype /Form
+/Resources &lt;&lt;
+/ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState &lt;&lt;
+/G3 6 0 R
+&gt;&gt;
+/Font &lt;&lt;
+/F10 15 0 R
+&gt;&gt;
+&gt;&gt;
+/BBox [0 0 1788 79]
+/Group &lt;&lt;
+/Type /Group
+/S /Transparency
+/I true
+&gt;&gt;
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��T�N1����<sub>�-EHv9�����!��ffvgV��I�^V�qWWW��$.H�����<strong>�x�</sub>������͸�����p��&gt;|}J�w������.��p ��c�3B���jF��K�@r����Ak��9�����Hq5P����R�D� �DBE�jU\j�D$?G�Ks�b���T
+J5vƥ</em>�#R"�®6����mz�
+,<em>\ѹ����g�ಡ��҈ �Ϋ��G���U��7�v֨�.���S�J�P=FW��M0�X�:.���T~&gt;�\Ʋ;�P�@�
+�&gt;��cۏ��%
+�W&gt;�����hG��;o��uZG�ޯ��h�Bg)�v��\n���M�{r�5�-]b���t�oN԰�"���J�D�sVBKl���6X</mark>��}z6�s�
+endstream
+endobj
+18 0 obj
+&lt;&lt;
+/Type /Font
+/Subtype /Type0
+/BaseFont /Raleway-Bold
+/Encoding /Identity-H
+/DescendantFonts [25 0 R]
+/ToUnicode 26 0 R
+&gt;&gt;
+endobj
+19 0 obj
+&lt;&lt;
+/Type /Font
+/Subtype /Type0
+/BaseFont /Cinzel-Regular
+/Encoding /Identity-H
+/DescendantFonts [27 0 R]
+/ToUnicode 28 0 R
+&gt;&gt;
+endobj
+20 0 obj
+&lt;&lt;
+/Length 4563
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��]M�<mark>���ׯ���aD�X���s����{{mè�����ߋT</strong>���t��R-4�閂��<code>0��TP�����1l���C��������?�)�5%I�ؤ9���$h�~�������o�ʂ�;�Z&gt;=��������?��ᇟl��?н�R�&amp;ra�z��\zr����<strong>V����[*Y�n��j)O�-���d���4����g�W�$Zt����&gt;�I&amp;t��ͭ�J]���������g1�%���B$m��ɿ��mۏ۫�r�$	�B&lt;}�)�d5O%΋�l�GCl5-�~{�
+�k+u�rj݆
+�Tga�W��`j�d���I4���аxI�'�T�$��UJש�jKW�e
+T��?</mark>����<sub>/y����O2/���?}�OpT3}��&lt;</strong>������</sub>;7��ܵ�ǖOsK1��"84��ji������%����.r%�9�S�e����}��;���i��qV$�FK?+�lsCG}[�o��YVomIKgM���Y\$�+K�ܑ���X�z�S.��GϘ�C��<strong>VA���0)�X4(��:�x�͵ì�b�.KX�oy�GK</em>!|�%���GJ0��&lt;����N���P&amp;� �vT5d�g�a&gt;u4z�fuL���m��H�u�A�
+Xo��܀��~�kז����]�Φ�L#���=.��,�T��t&amp;9�T۷;�O�����T����hֵ��6��Ed6jۈ�2��[�x귥��]|~�����o�!?.�wY;�X��r$]�.%	�c��{˽e��|o���zZ^g}k�[�{�wo��to�������u%�A� '��=��V��&amp;GM�V�B����S��KR�5{�Ģ"mTKk�����s��ʒ	i��,3F�[Eu�1̲�̱��&gt;=�%�(U^&lt;��W俥�6х����eA�׶�k���j��t���C����kjm���c~�������Q��{��8����o�jh���3�7���С��i�&lt;��9�l���&lt;^bx��[���e�����T.�ץ�<em>�Ǽp�{�x/
++���$�lrߋRܲ�zۈW�UR���Lցo�T{h�����(���H</code>�&amp;9Aۈ�������-*f/�S��h9T0E���?��2�U��� ��7��ЂTZ\�5��|l��zx�a�*u��b�n�ׇ.���,@��<code>2XZ�M4m����2kH��PaFBܐn�ӗ�*7^]�Ec,��}� Q� ��B�Ѓ</em>��Aa�1���	�j�4M�{��ס���4e	E�|o�Y|��ɭ}�Qd�=</strong>&gt;6r֦�$����.�|��</code>3��d�z�{o{�1C���˰^�M��d�Ghʋ�t�R��Hz���6g�l��0���Lߵ��nҼ��O��|H1@Q|+9ihهѩ� �d~�z�n���ߞ8�ejXM�0�N��Ǳ�@:�����ܼը�V���[��ѥz�A��������A)D[&lt;��y��	8�p��Ї8����(��6�ZZ��4����Db.��@L�X���	b�e�c6�VB�e�դ<code>nL:,=�ɩ���J�n~�"@�5WN��ai�Zo&lt;��H&amp;�=PѲ��i�G�^O
+1f$<mark>x0;�&gt;C���� ��BM�6[χh����.}U���E8h��sl����i	B1�"���~���F�l��Γ
+C	��e���~�r���(?����U��s��3MD���A���,�ҫZ��	c��G,��&gt;Fb_zv�	�w8x2����J|�S�G��i
+�᪔�[nn[7���J���蜥x^zFQx��w.4����]�5�-	�L/n�W2Lr�nՕ������9����XU�0���<strong>.���g�����)����JX���V�ӆ�;t�+U���U\0%JR&gt;��ǉ��<em>X��J�s���4Ç�D����4����;����a���♰�Hn�Qsf��м�</code>�;��w</em>�����tP:�o���\�9�ur��B�I�-j��0�t�XN�6���|���r-Bɦ~!��6����w
+��&gt;�E\U�&lt;�P`�
+&lt;���459�r�Sk��ҠD�NmTQP���r8_8_XR=��HK�<em>N�62~8О�����|�+����|v����4ė�ږ+z�i�cP�0a .�s&lt;����&gt;E)�\���0</strong>��t3֕�e3ҕ������A�(:,nźg��u�vX�5�B�
+�tuKE�OO�nq�	�řD��%Y�</em>�b`��|�Ë�l���s�,�x:Ŗz2�M"�(�)r W0M֘<code>]�ў�@���o%�<strong>(�bjC��1C�y�Ӏ7�</code>R�C�kBP��%|c�[�5:s�;2c�9�x�}�\}/c��Wqu�����U�qв�f��&lt;ݳ�q��C��S{a6�������@��z���4bNwN�b0�N�y�$.;�(Ku�	�L�����Ed�J�
+GS�k�@4���1ȅ�"o0\��xKS&amp;�]x��d����<code>����	�]w</code>� �F
+�)m0�Eul�b�@-��S���x�ǫ�z Q�!��@��D�̠&lt;)����³��u��Ho�8S�T-DE��������R��P�f�e�Q2���f��9aL�</strong>�� C�~�e�c�2���&gt;���ܺ�m�cj�[C�,��5|�1|'o��&lt;�A���9�1�!�$��gt������f��!��A�=xC�����7$;&amp;2�R�k z�l���J�Oޠ8��ZFB%1���ocK�@�cD����e0�VOV���^�)�b�L#����֙�}o� �"�oDJl,��]	���YFϞ �X8e3jH�CIT�����$� z����(�N��2�K'w��9�1�;�x����D�)�&amp;��u=RK��L�d_�~-\�sjI����Ė�)��?�sJ,�<sup>&amp;����&gt;</sup>��dc%�ܵ��f$�ɨ߄;
+"Zh{v	��5b{{��x�	QW��L?wC�<em>���J�hu�¢ݠGp�� ������m/�����nF�2�(�</mark>�(�@Q&lt;oKR�mG��	�~��O2�۞�0���:�\��ߎ�<mark>�c��� $-IG� Y�JX�pk·��v@ �v</mark>����7`� ,�	�
+�&amp;�<code>J��� S;a�</code>�\��BFL7 B��قS��:���PH������ʯ��C�7�U�J�I���@$�CR[��V0����m �<code>͠dQ$� i���	E��D �p�ZC�9����X$�ˬuw���C�l;��� �H���1��F��9ˌF�"c�cO4�!B텡�m}��
+�g��)���N�V�G��R�t_u�E]�\�5w��ۋ'��C���p:¯》��"&gt;���|^u���xƥ����%��)�Q Z�y*�qY|����Y�o�����UE���O�u�6����@�)�3��ȴV�d�2����kw�����Q�;����Zw+��Ⱥ�Ƕ�x&amp;kU}V��������FTyNFT</code>�군�"J}R�|�l��Y$�s�T�=�9&gt;'���UǢ|!�� �y��c��H*�nW�;g$G�{�Px�:�4�7�����`���o�Qz,7P�sPo�_k��[��v;��Z|��ۚ"ש&gt;�2#���«�Íb�֯�ZL���r�-@Sr����@�5^{��Z���fd�<strong>5�"	��=���V!�7�py�h�:e�"&lt;7V�^��)���ǌ�u
+�E�yku<code>�N%2��Ѕ�$7����Ȃi��̓o1\���xU4���#�:dkX7������sD���םނ�<mark>+F</code>��v�Ƥ��p�=Oxy���Li0�㵟��z�Y��ɒ'�T�</mark>@1�T�&lt;t�x��ab�;Ω&amp;
+xN��x�?l�}܁�;P|��@�
+�RY,ã�<code>�xzQ�4ׇc�s��_Q{:\���Ƿ�s��,P����:</em>��v�����Q�\˽����n��"=a�����҆|.����3Er��B�\Q��g�$&lt;�L#V��A�q�b��<em>�QG�5�}�ޱZ��N�̪�{��l�rq�T�0�gF�2x�����,D��&amp;����7�-�	��?�%
+1]��</code>�^�}ؾ��&lt;���M��K����LrFe�����/|��n�t�x9�:�N5�p�͹J���~w�؋�y)Q�8?��`c0��@\N���&lt;�f���ʃ^]\qD�jߢq�͚� Y�_�l�b�[5ν`^�x�d�fw.�~0�/F(�w;�(&lt;�g�x�ߛ��x�nA&gt;w3б�fW�3s-��uݹr��'�q�*W���c/�n��*x�{������n�DB����4�	�o� ����{֏7n
+�RrH`�k�c��M�Y�&lt;)���d�'��Lо�O�
+7�y��i�1��W��n*�=����������2���������gd-����}���������Ⱥ�"0�|�@޹ò���������$c1��^i�q卿5���2.�P��}���`�(A�-�`���7cG���q+�ӊ-~�Ԇ����f��,��
+endstream
+endobj
+21 0 obj
+&lt;&lt;
+/Type /Font
+/FontDescriptor 29 0 R
+/BaseFont /Raleway-Regular
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo &lt;&lt;
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+&gt;&gt;
+/W [3 [255]
+ 8 [607 0 0 0 197]
+ 18 [422 189 0 0 428 0 534]
+ 31 [188]
+ 36 [476 0 676 666 686 715 609 589 0 738
+248 0 0 583 877 772 751 622 0 653
+610 755 679 1046 0 651]
+69 [545 617 549 622 587 330 618 583 218 0
+530 272 919 583 595 617 0 351 487 335
+594 533 813 0 542]
+]
+/DW 0
+&gt;&gt;
+endobj
+22 0 obj
+&lt;&lt;
+/Length 341
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�]��n�0��&lt;E�ݡ�(���Z:$���= MLi�(�o�<code>�NZ$@?���',�sm���w7�&amp;�i����I</code>�jp����J��}k��7�8A</em>�n���g���lsT�����)p�\��l&lt;77k�3�((
+���^Z����B,�����4o}͟�s��2'7rP0�V�k��&lt;�<code>y�W�Q��&lt;��K'�[���ˣHD�)��J�eH|�s"RƤ��I$DR�QOAt&amp;: �D�ͮ��w��3q�2�z=�.�G��-A
+�3��''?)K
+���4�</code>�J�ˎz&amp;�]��9��S</strong>��z �����&lt;�<strong>o����-�I.3��v�Z�<em>F��I
+endstream
+endobj
+23 0 obj
+&lt;&lt;
+/Type /Font
+/FontDescriptor 30 0 R
+/BaseFont /Lato-Regular
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo &lt;&lt;
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+&gt;&gt;
+/W [0 [531.5 0 0 193]
+ 10 [230]
+ 17 [212]
+ 36 [680]
+ 45 [444 681 514]
+53 [644 0 590 730]
+ 68 [507 559 467 559 524 337 511 556 256 254
+524 256 821 556 556 552 559 403 434 373
+556 512 766 504 512 0 0 300]
+]
+/DW 0
+&gt;&gt;
+endobj
+24 0 obj
+&lt;&lt;
+/Length 287
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�]��j�0��y�Y�..�</em>�A���?��4m���·o��[h@���9O���6JZ���[�0H%.�j8B��T,�AHn�7�:�'n���ԨafE���b��J�&#8658;���4R�p��[����7N�,��,A����;��M�΍pui����u|l!&amp;��i�,p�GөY�UBqs�d�Ŀ�ū��u����qXU�r�(��D�DiD�dDYL�݈�f������7��i�r�����1�ò��Kt�z����������'$ޯQ�zW��}��
+endstream
+endobj
+25 0 obj
+&lt;&lt;
+/Type /Font
+/FontDescriptor 31 0 R
+/BaseFont /Raleway-Bold
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo &lt;&lt;
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+&gt;&gt;
+/W [3 [240]
+ 8 [613]
+ 19 [225 0 0 494 564 558]
+ 39 [680 686 716 601 0 725 0 286 0 0
+0 865 763 756 623 0 665 619]
+ 61 [660]
+69 [574 634 564 645 599 0 0 604 255 0
+0 317 931 604 606 0 0 387 0 384
+618 549]
+]
+/DW 0
+&gt;&gt;
+endobj
+26 0 obj
+&lt;&lt;
+/Length 328
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�]��n�0��y��C(���</strong>�I�Gc{ HL�4B職_�C'-���9���ե��̃w;�f��ZY�ƻ��[���E��<sup>Ξ�-�ư���4�P�ndy�y���l�;���'�Y��7��*k��ݘ@�&lt;dE�tn��Ƽ6� ���r�~</sup>���O��9"7rT0�F�m�
+X�U��٭��V��'�j;��XT�N�",��Hi���I�HIFt%:!��	"�KBt!"ez@���&gt;�����"�)��'ugj�	���`0I7w��@�I�I0x$?�vb���FY⽒�����LLޭu���SZ��kx\"3��j}~���
+endstream
+endobj
+27 0 obj
+&lt;&lt;
+/Type /Font
+/FontDescriptor 32 0 R
+/BaseFont /Cinzel-Regular
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo &lt;&lt;
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+&gt;&gt;
+/W [0 3 250 29 [170]
+ 54 [475 618]
+ 60 [661]
+ 66</p>
+</div>
+<div class="literalblock data-line-482">
+<div class="content">
+<pre> 72 [546 523 0 0 336 0 0 536 0 0
+774 0 0 627 0 578 700 0 0 0
+640]
+]
+/DW 0
+&gt;&gt;
+endobj
+28 0 obj
+&lt;&lt;
+/Length 300
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x�]�݊�0���sٽ(Z�u�������&gt;�M�6����~�ۅ
+(|�s&amp;���nN���w7�=��(��xw�Wm�.��_��r謈B��'�Cc�Q�%@��ɻ6G5^�IDoN���
+���
+�ޭ����XT(�C��ξvBD�m�����
+�?��l�w#G���$��\Q�q8��p*�F��N]zy������$�ڝ��#QZe�&gt;a:3�vX�3SM�����,#�&amp;��u����v�xDz�Fr�3�[����ϸ�ja-߯u��2�eQ��ʻsa��M��2Km�p;�%�|?`"��
+endstream
+endobj
+29 0 obj
+&lt;&lt;
+/Type /FontDescriptor
+/FontName /Raleway-Regular
+/Flags 4
+/Ascent 940
+/Descent -234
+/StemV 94
+/CapHeight 710
+/ItalicAngle 0
+/FontBBox [-216 -223 1310 933]
+/FontFile2 33 0 R
+&gt;&gt;
+endobj
+30 0 obj
+&lt;&lt;
+/Type /FontDescriptor
+/FontName /Lato-Regular
+/Flags 4
+/Ascent 987
+/Descent -213
+/StemV 54.5
+/CapHeight 716.5
+/ItalicAngle 0
+/FontBBox [-94 -182.5 1116.5 918.5]
+/FontFile2 34 0 R
+&gt;&gt;
+endobj
+31 0 obj
+&lt;&lt;
+/Type /FontDescriptor
+/FontName /Raleway-Bold
+/Flags 4
+/Ascent 940
+/Descent -234
+/StemV 156
+/CapHeight 710
+/ItalicAngle 0
+/FontBBox [-202 -229 1309 923]
+/FontFile2 35 0 R
+&gt;&gt;
+endobj
+32 0 obj
+&lt;&lt;
+/Type /FontDescriptor
+/FontName /Cinzel-Regular
+/Flags 4
+/Ascent 971
+/Descent -372
+/StemV 109
+/CapHeight 700
+/ItalicAngle 0
+/FontBBox [-12 -239 1328 915]
+/FontFile2 36 0 R
+&gt;&gt;
+endobj
+33 0 obj
+&lt;&lt;
+/Length 10178
+/Length1 19640
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��{y|[ՙ�wν�,�-y�-_�j�[�ly�e[��q��`�kL��uHhKY�it����ΔNigZ�&gt;Z���,�JK�)M����nS�"�wνrl'@;��{�������s�sη� d�e @`qiz�K�߽@
+��������_�dOL]��y���4�0���������p�菿v	��F�����N���� ��k��xO]�{�
+���Y��K ��(�Y�=���8
+q���E�R�-�'��OL,�������t��h h`��cy���
+���g�o���/g��W���%�ꁂ���VMHsλ5�Ӻ?z3�怒S�m�	�&gt;�c�����
+�;��?�� '�&gt;n�i�M�j�_!Fr�G�A"��N&gt;up
+�ɗ��
+��|0�)h �A5Ճ��pS+�t/��b���PK����G���
+Vr'D�m O�M�A
+���M�_�!�	|���#�?qx����+q���A|E����-���v�O����&amp;��(h�' ��JBa�6B9���^���&lt;A��J�`�:��{�� �� ���A8���O�$��U�,��8݁�l���νd���F(��Gހ&lt;j��U&lt;_�zxvc[�gwq��{ii�ʪ�Q�k8��	5�ڄ���mPE{��6C'�$�I&amp;�������|d��&lt;��=`c�!f0!�6r?�
+:�&amp;��eP�Ƅq��������	�Ӂ�"��ވk�1�A�p��K�V�;��H}q��]�|������~6���0�����i/�q�L�N��
+�`��4��E�s=��8��Gl5(Ϛ�6����[���/�
+i�-㛝��P^��{h�0�UF˺�mK��������m��mP�㻵������M����O�WQW��o�&gt;�2�	��b�4�呅��m!�%���o�͢O!Ε�待6�_�1��.�ݺ�m�v+�c���:Ƴ7��w�4��I�R�L�L��Z҃2EX�&lt;b&amp;���2?R���&gt;�$�[k�8����'��w������v(�6�t�^��+-��g�ZԖ�
+�ݳ�Sxn.X4��7nэ1Ʌ4���/"�^��5�3�kzTm�����|���`L�l��u�+��S�����ȰqM��yO�0-�A�a[�U��?�5[pm��6���6�z��Խ���ܮ��,^���l%M�z}����g0��X�1��߃|_��Z!B�=�1��UH�n�9����8�ǡ�&lt;N/BZn��=	e�Z�y`s�71&gt;�+��}f�ߢ.\(�)��+�!^ U���y=��&lt;��ϡ��r/x���qOac1�ma�a�Où	&lt;���z&lt;��1̀�ށ�2`^6C����c�wQ�w�Z�I���� ��~,�+�1���~��3P.��bNn��,�3i��`��&amp;Z���v2��m�_X[���&gt;�󓨗&amp;��qPt
+D'�W�(|
+��jq�*�A��.�a;��������Q�(cԣ�����c��uN�
+�`&gt;�O�GXD8�rb��+�g5�=��Z�������t������V��˱���7a�&amp;�&lt;�
+/�V��|�=�;[���W�=Fz'��?���`�r��ұ�������s����}غ�Vg&lt;�s��G?�+&lt;��/��݂�`��(����x��{�p\�q&lt;��z ǲ��]�A��5a+�^C�
+���r��D_��~"/`[���`ۅ/����DN ��w��0�I�pͳxޯ`H� N;��A��}��!����͹���S0���_��`� q:(���gU`�|����)��*�/ڇ�+�o�(|�`5�Ū��X�ދ�竄�&lt;b#RO��0��\G����������Lh��K�O@�����+½�}�Y�c��K��a�Y�Z&amp;--��`���m�#�-���$HER�d�l�S
+H�RTZ��I�H_�n��,}E�M��Zh5Y%���V[wZ/�Q�֖g+�me6��k볍ۦ���[�[�UV�Iȃy�	7��&gt;�%�'2	�0 �9�#�&amp; oRB�����'7� b����l����LX�-�Y��r��^�Ö,��!Q�P*��%����yX�.C�xNvX��&lt;���5�8�xX}~���W����������՟��g���&gt;������ׯ^=�z�����OVkRc ���=?���맟;��ӏ`/�jMe�~
+����o{������ϛ��{�7��깧���s�z�S���ͧ����N�ݩ�q�SW�|��ȩm��O՞
+�
+��&gt;�;%=��g���{��ֳw?��./'u�Ϝ|��/O&gt;y�?8�/'o&lt;y�S5�����t3����;����5���}k�k����2��{�\���Up5\�w�O����)&lt;
+������s��ݧ�i�,�B?�H4p~	?�'�:�|��t�N�):Mg�~�J�h;���I�h���^�G�� ��st��i���t�\K�'ϒ���%�2���^����������K�����k4���d����vǞ�d�9鎏�H�w�&amp;�#qOd��&lt;a�Z�OB����=��O_R��'�O����
+'E���$�;6Kjc�֤������V��Q)9&lt;�C��YJ62�1�V��TҍCjOJ�|�a�7&lt;*!5�R2sxtG$6�ɠ0�����x&lt;nNo&lt;.'axt:�'�����R��Mj䮤V�B&gt;�I2�O�&gt;钦V4]�a�
+�7��M&amp;�'����q&lt;`%�q ��GǇ͉����ƥdd�(Ιk����Ɨ�u{o��KJ�]�KF��]�$��I�I�"����:��H�Ꞽ[�	�퐌���x����]�ݱ.�uM�z�F]d*�/�Ѝ|�K��r����L�IɌD��D�ȉ�rD�;,O�q�ϰ�~Q��3t{V���6�ָ��O��V(�%�Q2ׇ�����`�������^���&lt;�&amp;��DB	L����q�����E��������+�T4nO�L�G�I�op���e�l��B&gt;^�[���]�+yy�I��J�y�͢%w�d�O~�Ą�ã+Lx�m�q�/;�c�qY6+�l	��#'�H/�nT�;(C[����NB����B� ��M��]R,��Ɨ)��uI�x�7���u||�@�M^�5�PLE�[�ן4�VkM(g��V֖�VD֖�V4�-�hYk���X[�[�`m�oE��*���{R;����$��ğ���4�M~@����t�M.)�$s��
+�*�?�%!��"��!���?�ڑ?�:�?�:�?ֺ�?ֺ�?��|R+7S��5�Kݨ��n�Jt=��j_��M��k�z�wТ�h�YD|W3�&gt;��ZbJ�xV4��@�����ӵ&gt;���B&lt;;���s����u�b��r�J-12��P H�	F�H4������V2�^�h���ހ:�C��z��,���{1T�b��Ȋ� L��Eڈ!ʔ�G4����%�����ղ$����6�H��^IGSJ����&gt;z���|u
+e�.H30&amp;�[�A����,�)y�v�O�I�;1�Ӵ;aFx���kH�w��)�	=�6�����J�1J�4hY��v�GN~��Py�,�}sZX�%5NUr+��em*���{�^v(�^��3��a�h�Ԋ)�Q�J���
+��������e֪�df�m�(�N�j�� �YN��E5�bO2�{t،)Sj�W�T�"tЎ
+�#��
+��s�}���d�����%��Ǒ6f_��;��B��ո����l3�f�2:K5���k���4�_aĽ���q�BT��Qh��X�*�1���޴z���ʪ$TN֘�E����cy��\X��C�{��~܎&amp;��%�dr����̥iI
+��	'���[ �滝�a��v�C`��0`�a�N�À]�;0�u"�!¡�|wel!e,����0&lt;�ex:��qh;��ؙcg2`��ɀ��A`��0`��0`��0`��Յ���A��.��t1h��Š9]:��b�&lt;��AQ��k
+&lt;�{�v��E&amp;tދ`��FU�%d8�9Qq�qq�ڮGx���Hي����}T�c
+�.Q@��A�m]��C���?���Rd���*�e
+�.W@�pⶭ�w%�q�* C��2��J�*dW+ C��w�^��b�˛̘N
+���&lt;�g)t0Y&gt;��!�6�M &lt;@.������!Y։d����m�N���ӝ4���&gt;��u����r�˼OY��q��ug���� �;�z;z�գ+�Tt��z�̸��z+^D��M&lt;�}�8,�f��e:M��n�����)L��;4SZ�F���j�Vh�P=����_
+���EV__��7ЁO4Q;��%�N]�o������q���[�����H�j����u���!�e}�KnT���Y���u�g�6�� /��
+����0&gt;o���W�K�I��3/|�?�O
+)�޵�&lt;)������\���m��6���u�f�2���^�g��C��2�K�/e��U���ugvyv$�"|��?�?�?�?�/`��KZ}���B-x"�ڒb�`a|!:��1�5bd(Pm)7�D��K�N٦5Yh�E0�R��j���p}]5uU�u�4Tk*&amp;oX�"�.���Fl���_:*�wT�3���w6W8��7�.�i����&amp;UYLY�$��6��ym�V��$;����
+n	��.��0�\F�FL�؇�d���A@R�C�X�?�����@�I �-3�����r [�-l��;���:���rVzi�pV��l��`������@#�"�(UQ�DdJ:�հ/��m��(��`4t�R��h�r����6���Կ\�᪩-,n�hO{{;�-��$���fѤv�s� y�FP���z�L1;�J@��j������qrc|����rZ��V_�u�L�.����+�)���VQ�:W;��B9�k��mW��RE�qw���=�J�[FL��ʦ�L�l_c�^�����|5k��?X_����������&amp;Kue~��)�Ze5]nK����r9�j�Z�"UbZ���}(I�ME Q'�.|��h�)�����21�:A��L�I���H�!�2���!\�4��-]�}Z"�m��	�rV�]������&amp;oC]��]8�$t��Q��T�+
+x*�����.SM������i��@i�T����p�ֲ�R{����x-���8�p7�+r3�ր����l�g�^�A&amp;x#n=9�"*P�3����222232
+C�V_�%!"��:eD�[�k����{��}�&gt;t���g�������4��xFTbuU��'��(JE��Z�ѐ}(�V&amp;��SI�|��a��ڹ�2k��\Z�ɤc�a�B���R��*�Bv;Z=��@[oO��_��=ћk��E�^�
+��һ��A3}H
+uZ�qS�D}Y�Q����$Ϧ�4�k�����уq�:�0��qX*�"�Ӏj��a1a�hQ&lt;�jP�U�-����hl(FO�US����cWI
+�`ckEd��V՛h�t���
+�C���/
+����Lu���%�n�\�e~G0��-�6�)2{%�a&amp;�@�fC)�"v$E	LL�d�����B�dY5,v��$&amp;4��/��]��
+�?����cS����5��C���o�r_�LEl���ӿ� ʄ��s��&amp;�C�A�f\Q$�iZ����s�����`U_N����ٛ�R{;}�}ZR u/���DC�!v5�� ���z�3���ھq�hj�lMݎ[��jN��=��43I���H�18
+B� %碕d�_��@�������/1'C��ӇR�#�ʾ�y�7��ng�k�#�Ö�-M�F��rEa��}��6�j@c0��J�1�Cn��Gە�B�yuī	���G1����a&amp;�P�
+���&amp; ��Ȍ�!!�q�tU�tO�jq/�M��O߃L����
+��r`�Ҡ��g,$pi
+�h�|O�S�|O��[O����]�[O�(�փ7��a�/T��Y��b�D��C춲�,=�B��ȫAWQһ�T7R"#�/��h ��ށ��/I���oi��:\=�ͬմM_��b��c����+&amp;[���;�u;/lh&gt;0��P���:��悙�A�/{�@����T͘K
+y���j�v�i_�
+g�'NLI�%&lt;X���!{Q����i���c�ʷ�ݙz�D�����+M�?����H {-Bb�ՙЯ��^-�E�m0�Yu��ut�
+ea)&gt;�����_��O�����9�Wo�K�z�h9I�͒��+�6j@����`��0���$�L��OdԾ\o��O���z����v��Q��-����
+�)����c�]T����B))e�v0�шx]P��J�u��=R�����=���~�9���0�I��w�Ds��eQ7^8R�g����(�k��:�� M52����y��b#�S��SO���D��4]8݌�	ˋbׇ3"�0Lh���a��Jq�PX��**n	�,/
+��M!�Ꚛ������c�{c[��AB�����v�g���#F0Gⱟ �L^�H����#�O8��Q�F=J��{��C����^C׽�\��J�A2ɽhS����i8�.��5a��!:Rm���B@+b&lt;H7�Na�����4xhߠ�h���]j�Fw������T����$�L�]񚧚�Y)�ʖ0v�Ƣ�Q��&lt;�V�
+7����k��5eR�p�="m��wzK��&amp;K
+��
+B�k���z���ٷ��Z�Y�k�ٚ=Ź95���=��My�PV\US[���]9���Oe��Ӄ���Nz��;�;��(j��`�dx4R�&lt;��k����hf��y�IK8N&lt;Rl2��b�2Uegb�(B)�����2�����k]��-h��h���
+�Y�]{���P�9��W۳E9ؔ���'R�wVoI�&amp;���rˠ�j�E6b���[jЅ|jP�Y�͛�޵����'���	������o8T�e�p�B����4�h��&lt;M1G�x��h�Ow�������M��R����F.�N0������p�"���4G��:`^��Ё��dQ$����;��R4&amp;	]Z5U����`�&lt;�p�Ҋrngy�"`**0��њ�Y�!���Y�Q,���Y*ʢ�L�F�������f*�%y�{兞ҦZY�t͞h��Rכ�H�7LxcA�~�R4�JS(��Z$ט�`���[�ܞ�&amp;�b�Lo~ԛ
+���Y*(F��T+h(�=��S�N�	�~�_�*-.4 36b�8+W�쎬h�PaDG|Mc=.Wl��i,�$�.�Z��,����-پ枛k��錆*�LTacC���g��޺��٘_��%O������J�e�~!�PM�p^��	~�j�{0w�K,+F;Ѓ��6-�d�Pl(t`������C}��.�f�Z�1�4��7�[�l4�V��_O�,�fe��S~ngVZ�r�C|$����rD����b�Dg/C��qca�K�j!:Vr�h�]�S@��:�v���s#�M9�5�&amp;gS��T�m�N�m�^�e���\�U�w��H&lt;�=!�U����9d�Tδ�,��NKs���r�}�@���G��'|ݡ�����X	[kk�U����&amp;�����[��uȅ�fUt4���(t�y���Cv�YXǐ��t	,�r��_�l���AgX�(���T4�:��h塈��]@��h�;,���`uOK�ڲ���_&lt;�:&lt;S�_��4ݧ�.�d���sܯY���׃�h��O��hjJ�AO��䉸2u��RY�k�����̬���*�x &amp;!]!��}��(qly�i����Hm&gt;�&lt;�z�޺�&amp;1��y,�f`����u��(]�8�|7-DͲ_-��&lt;dl�JY�����0=q�sV��!#�&gt;��^��y$���f�L��aY]��i�F�P�s�X�Mjǘ�����#YXjʨ�}�F-)����殤�L�67Y��6}������h����k���2_��{w��
+��D޷s�ը���{���RˎК�����TMG!� Aa��Bi�1�
+�u�2��]�`X�3���di
+��H��=�V{&gt;�)�8EM=R��P:n���Mw��3w����K��UMĜ����c1�c�[B1�u��\�:K�w`"�01��
+L4�'�$�7�$Y��|�-MVk�^sx��(8G�Q�k����+Z��R�I���5G�Y5�z���9��\5Ǯ���h�4����u�����UU���lGM8�;���3��6��D������3�l3�5e7��"�&amp;�6���6�����T�!��%6�A�d-4*��:�,&amp;�b3�h�b�1CC�}�{��íQ�(���Q�A�{fE�(�Rx-��Jl����e%Z����g~Q����J����}�m�S��[�1X�jq������^w��Z��o���r��\;*;��vV���S�ɠ�2�WU�Z]E.�m�d�8J�e�y�%R��o'���Kb��{j"&gt;3�*��]!�_$j���Y�\�3�uz�ס�_�&lt;�x�4�����4�ܖ����ѣ�QR�Ӗ
+��٥�Rr$�L�S�Pa.�x߃&gt;b�z��G��*�,�R�����b=Q��UW���3#�5kep�2̮��fi�xw)敕^��XN�u���� jqe����zm׎�1KsЕ-��J,�#�X$��+E�:+�Km+o�D2��u3^
+��|�r�دh��c����(�������=w|��q�O��ç�C�I�a���r2���٭F��
+:ҿ��N��	�2�[6���NWL��l��B�]ߙ�7E���I��Hf�u&lt;���ǿ���_�gaM��g�ߚ�2��	E��J�`��z`9*0��+5Bg�������J��������B�̂��	ɴE�*s�^����&amp;����ѿ�9V��aO�)��������
+��#*���H�
+k!��0�E=nt!9��r�I��V�8N�Rar�����&amp;ܠ�Z���*���
+�3�
+�aFS��I�a΂�&gt;�O6��?W�"e
+*�uYr��ⱥ���˒{�J�
+��5!��%��,m��?4�th���&gt;��������ËKӉ��Ʌ�U&gt;i811� �\L��'��$�\��L�ͫh#Sx΂�sd��%�������?=?�Y�Y���s�������KMOI=������Ӓm$1?}q�X���=��0:���qr֨�Ǟ9�YRWK��fή:�{z����!)Tf[���đ��sH���`u}�䟗%��T��^�=*�$T�O,��3�䱥y���+�'%��dK�W��nX�E8K0���A7Lb*��/�A|%��{!�!���̡I�C0�;��1���:����(���a��J�T�Ī�
+��b, ܏��؟�'��b�͝5Aj�)s8�q���T~؎=pO=���s8��{��T�S#�=s�3�Jp1�-���4�����S��\ɤ�W�Q	/�#|�i\�@�l�]f�L���&lt;ϖ�o�tΖ�o��ⵙӼ�li���봻s7��0��8�p���3-�g4� �lP:s��(� ��s��qG	9���R��u�Q����Q��s����Nr������ˡI����,a�&amp;.7�`���-,�,��inQKp ����f���:��v������S�I:L�|f���9t%�����2�[�&gt;��I�3���2iI�v�Es*��)�M��C�7M��w�0�5��67�)����q�/�~:��8?�|TY9���ȹ�ROU,wAݵi�yI��^qK��/�H
+݊֮[=��{��3��ǽ؊UVK�7��yy�}Oqx�SvL�E�P��e
+��}���33&lt;b/#�K\S��5. �������Uz�n$��qq�s|�k��R��S��*�N�����p����n�ȧr���/s&lt;%r/r��9e�9���)n��\n�ɵ������f��)\�qh���Ͳ���z��
+���6h� ���1f����ϟ��}갪+�/凹t�~~�w���}��ع��R�;�ig��ϥ�NPxI˪���2�n�|�՜�,b���d�����M��VhNgύ{�{=�����
+9u?e�����a�&amp;�V9;����:�ށ�0��6Nӡ
+;m؁is�c9,�}�e�=�g��HZ�k�?��sx�g܍r9���"�i5��U6�ffq~��o��/�^��
+endstream
+endobj
+34 0 obj
+&lt;&lt;
+/Length 3935
+/Length1 5992
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��8yP�ٝ�������'4M�4w�M7 ��\
+x "�r�%x ނ��`\4�q=v,w����$�2��;5�u���l�:���)cԝ��F���}_���ʟ[����������� ��������N�� ���Ɓ^���?�/�=M�1�(' �1����k�@_�ҷq-�����7��oƻ"D�y��Wf\Ap�vnk	��&gt; ƽ�����7�j�`��
+�e!�s�&amp;�d�O!T�+�������������q���D����N���
+Q����P�@i�Ͽ
+�{�İ������c��qG�hH��L�P��SZc�Ap"t�"������0FU��� k�\�z�=a��x���L��m�133��w'�3���F8���ցI�	Ul��R���@
+�p�9�Љ����K�F��z 2�e0�0pM��g�eB-s�����Y$d0g@Ǿ琦D�5HYH� a�C�1B=�&gt;Ĺ�����{X译N=����"&amp;J��=`c�aM��L{��1\_u�(�G(b*p�oh��͐M=��2 rv����ZJ��E�7��j�i���&gt;��@F�Џ�e��n�U���
+wN�p-�D�-�}B��2������f@e��F� ��;'�c�"�(�������/y_~�T��c�y��_���6�W��%����&lt;|�&gt;c�����Z�y_��x�����w&gt;c�Aٜ^�ι�/��B�μ/%ǐ�-(B��X�@��3��3�5&lt;P����ί�8�p�P�{�כ@�\ -��z��y�C�Z!���ŪJ��g绘����\�0��KR�r��)��Ҡ5�
+&amp;C���p�$�z:Ax��Z6sKa1��V��-�}���w��Wލn������t���_�?v���1�~��z������Լf��4F����o��$zb�7�p� ����J�����CZK��o�_2���`.3�����`ϳň*D[D���#�a��&lt;���D�`OA�bw�Pd�v��R)�����-�L��b6I)�)Z�pΜ��B��х�&lt;4��ܚ�Z�Ot&amp;�n0��&amp;��
+��i1������duL8ǅǨ��=?�?������3�ՖpΜ�&amp;�U� ��i�l���X3b�r�\=�")���j41z.�����&amp;`d�ѧ�e���ɉ�eI"�Ӻm�(�=����l6�EL|����7���� p9��oT�R�
+�U���
+?ݸQ*q��#���|�b�* #r������b'F�-%b���� 9��y@l
+=Ie��R��Ԫ ��VIj&lt;�:���vj��2�P�2ez�P!M
+(��M\��nS�m�T*g�&gt;Z�����єJ%ϴ�.��$�~6�H���T�C5�5�{d
+e�@z��v��E��BP2=�^�hb��	g��d�ؒ�$�U���}O���i���
+�"X���Ɛ��I:J��t�*��4��0�j������^�D Yӿ�eT�r/�9}gj|�h7����!`�=e�3��y�P"0A]��94I�{�����5C�#u����P�.&amp;��ܻ߯*�ʥ�T��o�S���kʆ�K��/b)Q�-m�ٳO��y�B�bܠH�3���I��$���_�3_���u���U�P��gpn&amp;$�����m��F�d����wO�O�����&lt;YC�N��q��������隓�Y�k��	=Ȉ!������9�8�\
+!�w2���x��V!/z�\k`�1e+2��%�tu}S��$�&lt;LbX1�e�p��cKZZ���~�3E�����L�V��f�T���-ی�F�4��"�yd��s��f�G&amp;�V�����~Ũ�IPc��՜ŗ��b���DbN�P��J�]�o�ivfnoY���Ob!���\ɛ�F���k�I�����C��z'�V��Z��u���O�F���v.�~E�fX�7R!yC�J��"f��Bb�5t�$X&amp;3;����-��+�*�[�)���ou7��l��︐C���CS�G�k�l�GX"����E��vl�q���[��o��k4%��</pre>
+</div>
+</div>
+<div class="paragraph data-line-672">
+<p>���a�D��X���.u�T&gt;�Z7��d��)������Fm/oX�o
+���I�l�s�U�����Q^_J���o$_Y�`]�٨�紝</p>
+</div>
+<div class="paragraph data-line-675">
+<p>�ڈV��kN���C��T�ME%q�@�������ýEy�׷����6�70lV���8�ڑ���HT9f�E����C?�Β��g�����<em>&lt;�	��yOG[I���ֈ�ʅ&gt;'|�~Ы
+;��fOEAC��Rg8��|F��<strong>e�UߩKV�VJB��yu{���/(��8}�a�/�:^K�ƨRʈ�IXњ����p��DH�DV�wG�� 3&gt; ��ߟDq������/�13��\��f����jXo6&amp;JW��%����:S����J����&lt;:���6vn�������~�y%۪��Ҫ��
+f�Զ�Ey�
+�	%����ʅi�$k\p�Ẓm�/~n���"I�R�iA|�69�Z�w�&amp;�uw�%�:��}G����R��IXoM���D����W&amp;L�w�����r�p�k�H�{;��wY�[-�H�j�=�u���W#sf�u*R=�ʌ�)ѬT��I�U��� �)ɞ�%�s����sB�����Lj�vg�k�
+�ʌ�0	%�I�AK�</em>��ō������k�Ĥ���}
+k�/�M��M�&lt;��4!<em>�DJ�Jm0ɕ�C�{K�8yx9rN!�\���������8�*X�����JO ''o��&lt;:�@�"����Z��|���o�Ǿ��������&lt;lf|$}�[���õ��u�ªF[��U։����L�ĺ���I�Ө���FW�<mark>ľ��Zދ[�Gd���W����A��������4|�7��Ļ�k^
+�~1R����W�;</em>�-�ŔJ蹾s��{z��</strong>(�u���'�zK��J{����ց����:y�dz�wt۱�͚��F�k�s��a�j�b��3!Ľ�x-dy���Z�;�R��N8�T�{��
+[5P�v�Д���=��'/wAG���,<em>ޓ/�h��N^��7&#8217;r��g+��7����%�)m��h���w�Jjf������|��u͖i����</em>�O�� �&amp;h��SK��	t�j�׈C����q�Su�َ�
+n���ս]����_�~�čh^��槟�ڡ�D��Q��Y\e��"{XbI}S}I�m�H]���8�Z.�I��r,u�&amp;�445�$&amp;��j~;�^�V��85"�a	7�d��Z�u���Y$ՙta�LS�:���&amp;/cCer���1ߛ��<code>��0YR9+��|�r|P���������</code>��XJ����^v�.V��H�}�vQ�
+�bI�)&lt;�{��r�er�2&gt;��3���I?�U3�(:ώ��/G:6,=�1!����廫�����]%������W��G���m�O@z8+x���|)�<strong>�Y&gt;�҉���%r)aDa�Þ���d�M�EfsQ$u$X5��R�.���Z
+-��l��)m%�Ӟ������HY�2��l�b�R��C 'a��n�:�Ϗ�j��K�Y�<em>� ��	�L#�c2�R��5�E&gt;yL��j�4�d�{�	f߭��3�OD��'��P8i����n�;凞�g<sub>ܧ�J��;��u���&gt;��(ߦ��4�3�ӑ\)�ѹk��h��sI��� ��	�Q�x� ߲�O��t��{�Ok�""�b�R?"�s#�R��Q��ԽO���$h���*�����u��X�����!����b�������=��?</sub>M�?$3kV�D�5�/t̬Y���[�gf-&lt;�2h�M��<code>=��f��}b��W=®���f؀�~��v��,�M��9</strong>�W��g6H��N���r;�u�i
+�V
+~��[������g�jG\��@/�t����4���$�§
+���~$��ǻ}H�q�ȑ�߉sb[�A����6V
+endstream
+endobj
+35 0 obj
+&lt;&lt;
+/Length 9008
+/Length1 17788
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��{yx\ŕ喙�h�ZR��V�nw�������Z�Z,K���K^�Z��eK�2 6;�	K&amp;/�dސ��$3��I ����J !B��'�</mark>!��X=��{�-ˆ$����</em>�s��T��T]�<mark>�T����<em>���d����H����G��'�=��,�u*Q����5��J��D,����x��?�"��̝/<sup>��JT�|3Q��NF��%�W�JН0}�#ǀ?��8=�4��}��FT�������w��J?Q�O��</em>��F�I�X��o����&lt;؇�����$dW�v���l�9�<em>b��N������e��cN�K�0h�����u��b�܁�&amp;�K���-F�</sup>"�&gt;@Aj����Z��Y�f�R���Z��Ir(��o��7(@��6�H^�@�l���'��~I-�c�Bg��?DN&gt;E5�%
+�z*�a*��)�W���0�A�I�?RS��+���v�6�s�<strong>�T����������w G���~H</strong>��37�o���c��</em>����
+�� �w��(��D�	�&amp;p2v��E&amp;~�ܬ�����	�}T�~B��<strong>�)��m�����ܻ��-P&gt;�ܐ�
+4m��
+���6jU&gt;Z���A/ց�݄�����'�������^�&lt;�K��~K�X[��h`-o�fi��Ň��{�� �7��rh+ϥJ�MT� � ��||����"�&gt;N��E�4�gw���"��i����o�F��
+���T��-���}HS�rv����X���<sub>�FcWBw�p</sub>�Y�Gc�����F
+�ɔ&gt;r�^A�</mark>�8�5�=K��<em>�O����&gt;����O.є{��v_ؠ;	?�-�3�</em>"��~Z�X�%.|���WЧMB���+t�D���Kxp�B�U���o
+\�P�"�W�?�.'�	���=k�"���% }SƞK���e�kY�����k���~I���w�𓒌5&amp;�,r
+s��&amp;sK�^4䘈�K�� ��V�p,&amp;},x���</code>�\z~�����ޫ ;�7�Q��{�!E]Q�Dn�)���e�!�%�9~�ɘ&gt;���2g��s6Q7���<em>�ƕ���A��/�%��v����j�9�H֩���z�=��&amp;�hĘ�ۿ7�#b�x���5�?�=�� ���κ
++�\�{܆q��F}@m��lłz��57B_İ����-��~2���s-L��"]�#�*V�2����{��GQ�E-��Ы����zz5�&gt;jf�R=Ӏ�|�ԼC��{���^��)�Ma��?QOQ�η�q�}��S�C�m�I�����t��Ӡ;a��;���Q4;��Tj:N�
+?塶���M�]qP��F�Җ��S�j7�T��,���C�c?��}�&lt;�t
+&gt;��r`
+&lt;��2qf^{Y������$%��R{�ؿP-Zh�Y&gt;oF{/��@� Z��|u��X�D~�3F��4��2�5���������d���p~܎���v�v���d�I)싔��w�3�����w��@&amp;f���ݼz����o�1o��o`��w�k�a��d^�Q'U�~��b��N^aq��M7{��9.�h���W��
+�f�&gt;}/VB��$�:��jʥS-b᧸#�(�/�^E{'�P��G ?C��Ӡ��a�A��h�@��D�w
+�S2!��g�L�A?��c4%�ҕA{�!�Q�cw�v莽e;�=RS%�*r���l�?ؤ\_�oFq
+Q�}�:�1���Dpwx4�cL4'Zb�1��r����t�3�3�̝�b\�IF1�ȣ�P���e��2�
+��D�������!�:`�"y�Q�[%�k��]i�$�s��rlE��B/��X�U�;���R.��F���{��n����6�N�q��:��,�yY5k`}l�gw����߰?p�w�&amp;&gt;���o�g�LŦܥܫ&lt;��69Mզ������n��ǽ�=�&gt;�&gt;�~��K��������P5W-TݪW-U���[�W��[Տ��P�Q�U?�~ɓ�qxT��S�	{vx.�r�ś���ڽ�^��һ�;����G�0�a����
+J�����B��o�²��հF�϶J��5{���W�O_���L5�;M�;�]��v�q��g�׻��~����[�ݿs��r5G�W�TU�N갨^&gt;~I�{�:ؠCAB�	�	b/�^��,�����[�o���{2���b�ľ�3v4v$vE�Plv�{���D�����?����=q��լ����{���/lya�
+/�^p����o�����&gt;���</em>~����?{�ٿ?���&gt;���w�}��G�n;��l��ڳ5g�φ�Ϫ�=��ן{��/?��s����̯����O�&lt;{�'g�&gt;��3�&lt;�g&gt;p���Z�Rmy��k���(�<em>��]����k	������[�����O�Y��f:I�[�V|��F����	�&gt;����B���3��8�J O&amp;j�)�	=NO��$�����|�O󃼕�f�;x�o����o�|���|�����</em>�{�!��g���N�{���<sub>�</sub>�~�v����og�%����R���F;�{FTu@��:�Y����Z`dtJ=�sX��藒(���}cN�G���|���]��!�5ut</strong>��:�j��4S��,��g�G��{4�?�m���q�V��!EF���,��uY��Nh=U��Ղ��а
+iNEU-ehx<mark>��KX��G��<mark>#N�U���4�	iJP�&gt;&amp;�����5��S��:�ǈ�FC�)�\�Ĳy�S3Bb�.�xk�ўqM��<code>�K=����j�JnrF���F&lt;</mark>��&gt;�9�P����A��Uy�0�Rt}�&gt;����ؔ��!�f�i֠<strong>DM��Dc��A�����n)jR�&gt;k*u�tVx�O^�}V	�����s�~��"����:!d\Jx���Y���r���y^�Ջ҂R��RS8���TxBZzp��m"��2� TU-��<em>,����Eoz�腴Ll�%M����et���FU-FiY���˦��-}�wMH��l��������2ev�^����X�Sˬ1�H�\N�t�4�'���0��&lt;�
+���q�&gt;/� ��4�����Uo�@���եQ�}�1髜 -��1�e�:�-���C�u��</code>���Quv�]ζTj�V:�0S.t˩i��2�;�\V�.�,.�,.[t����t��,��v�,���O
+kl�H��V�jґ��R��\5Y��\�'�A����C?7�R����'��	�~�@?��O�R�'`�0 ��V�� ��F�.�v�K���j�J-�,�B��o�E_��'*�[R8���	�2�VU�lf��a2�`�j�\&lt;]T��u�c=3Av^��'�?�#���׼\��B�z _Z`dE�9�5�y�!��ϑ"��A���ï��^���eߩS��^��a��(���sa�f�(��2��_�i�]����&gt;Um=���]H����4F@�j��hD���q�s��K�NQH�P�}�ڷ)ܵ6GE1��
+�5:�Ӕ���yW�	|T��k��ݷ���F� �`�K0��%ӄ*'�Y�vŎB#��!�T��߷��;�f.5��k���'��$9����
+�&amp;�'�1,L;��j+�\!�1�
+��.����[}��λTX���n[%IW�U��
+�V�{�Q(�����!'�L�u$�f�HЎf�9�.��\r�[��Ԛ+ߊagP[Wy
+����RoJ
+���0VtI�El�}"�҇d	<mark>��]�Qwp��	�� ��?�BQ�Z}�B�"�3b�؃��\��F��Uz|�%MJ�Bi���^ �s�Z=�yӛ��a;���5 �jM �n=0��gi�R��"������P��\�	dK�&gt;&amp;G��ȑ����6A</mark>��F ;�@v�G�� l0&amp;�����&gt;6LtL`{���
+:��t�/xv�\���S ���@��f#�1A#�qA#�	A#�I)W'�))����\;(�،�K`WH�vH�%�Y)����-	�=�蜎v �F��zW�5htT��4̠Y����]�ɞ\q���W� ��K:</strong>��QA�ж&amp;�{��I��tT��QA�.�4��QAp��
+�Aۖ��&amp;ٓ�7� ?����$V��QAp��
+�[��'�x���Y�%MjJ��5�sX��|Њ��f�ny��,���d��'go��L�I�c��ԒTaɷ����Q��w[jM�J�|�q:�t��ӖȲ9C��/Fğ�(Խ\�nي,�exY��<sup>.����'f��2�/H�e3I�g2�&amp;-�VsZŃ,vB3݆���~󄅺���/�[�,�������R�R�;���</sup>���
+\���U�J,�U�6�F�Or<sub>���]��]<sup>���&gt;mų�����ϊ&gt;�=�Ǖ*vR��jv��{����.�+���}|�-��&lt;����y�/�G)T"ʝ����\S}�ٷ�yڼ��1K��.�&lt;ayM&lt;ր����$�|��3���������������</sub>9b��</sup>�m���H����d�
+�J�(�HQ��sv 7�Mlsm��8�QbJ�W����Z�n��V���--kr+u�
+�a<sup>V��y]�<mark>��l�7���큶@���je߁�����%WE.+</em>(��-�</sup>�8p���Y��<strong>J.GvJ�Z�U�nkm^u��d�+�/O��M���֗7�hvU�B�H�i��</strong>��s���
+���BRl
+��k�����NA��G|=eSM$l����L��&amp;s��i���r�n</mark>�G6e���6�5���o�4��2<em>Cm;o����\q{rY�&amp;'���o�uii�U�82��S��W��R�|I���)���}-6���Wu��a]e��)J�"��S��&lt;hNΫ�����a�R�7�[��aZ7��f(V��4��VU�Q��|��]����ꆚ\��<strong>Gv8T�ªB}퍅O��]��pf�gx\9�����8-��ؓ�I�b�!c���=���LfSLi��T�k�'3,d6M�M$dg�t@h����S�/�$V��D,8u��B|_��x-��`׵��F[7�\���-�?PT���
+���Ȭ��/������V�[jtc��WM�OIum}�DSey����&lt;�3�0�!�n����ů�p�Ȧb
+PC�6�q��/q��'-�lf�!w� "���&gt;Ɨr@-�{�c!���RZ��������rf74�'K:�W�����o�ȫ�m���t�;����x�3V~���&amp;�y ��珪u&lt;�{���9���/gx��(���c���oQ"~�9Ʉ��7K2�d�(��eȻ��#��"�2�H@!YS����U{n�&gt;v�@�6�~����4ί�
+�]i�ز�r��u���wM����s��Vt�����H,wm�U8"�7���.l��2�
+�,RQ����"��1Gn�
+4���3�l�<code>���M�����5�n�AQ��k����P�m��o�M���Dݮv�J��cl"�6�o*UE��ɬ�&amp;E
+�'|�����ğ��6�]x�J{q�V��å%���g�D�橸yދ�秖HSV&amp;7�b;&amp;%���-����C�m��?�&amp;;+�a�x������ES���c��Wn|�ކ����'�(�vFׅ\j�`hz��-�l;1�wCtݎ��
+ͥ���kwG���ɕ��nz
+v�׵ցK�5[����\���(y�g�He2�
+�U��W�fb�.i��m�ζ �&lt;6ŧ�ஜ�:�큁N����ޏ��1v�Jte��%���Y�drG�f
+"VH�:�0�[��&amp;#U�� ��S��©y���:�fO�[/���7�S�E��"��<mark>��t�3</strong>��&amp;S�1'�V��7ꈑ��n`K��kom���ߵ��~��+�(j��lp��k/�w��&amp;o��qb}�ԍ]�7��gû:��;��e�];u���</mark>�59P	�</em>�༘$������Øy�L�e&lt;�d��&lt;��m�f�l�g����^�e[ͧ�.��<strong>�e�?
+n�������t{��ҝy��-��IET�NIT2�JFF ��?�
+��@�i�G��%d�Xs|eR
+�D�E�ѳ�c~�-�(*V�ӗ�)]��+V��d�.��/�(�	�g@����J�H&gt;���<em>�H�H�,�p���|�������s���%�ބ�wb}�"�q�c�</em>��)�t�tv�	�s�:f�5�}���]Y�u%���۵R����;�6�W9tC�4���;����</strong>�YY����bN3�e�XM�� &lt;���j�;��,:`N� ���Qmu���ѫ�]���,[+KA��J��ֈ�ݞ�ȳ[�AWf���66564�2�+��;���N��m5����-C�Ǯ�.��-(-7+��o�͑�\X�Y�Rj-�w�R���n�ή���۳ق�[�
+W����њ�ZU�
+A�6轏?C���=Z��p$3�aK/G����~�#</mark>:�� pX�� ��6pF&lt;k�_"Q�@3�s�Q@��2GYZ��b6Q.�M�9YZfG���iY�HI���V�t���c'����S�߹gDm,���kݡ���Hi��˟Y�QuC��i�X_�BAE����W^����5�6(��=�b�93{g�&amp;e�?���\]���,���n���Zr�dk��j�v�����-�&amp;�;wG�6�1K�X��5�<strong>�+o��Z</strong>�J
+����2]�g?|RD5�����ҙ����0��sŹfȜ��[���"<em>�@����d��E�b�(��k	�9����]���\5�&lt;{Nvfb��%_P0ypх���C���s4�����wյ�/&lt;�a�9J���	x��$��&lt;�]W��(mH��</em>�n���9�<strong>Ν�![����-��9�9�ά�PK���"_�g�o�����99*W���Q�\�TC�đ���qI</strong>+.�y
+�r������.:,V�����}le�p^��Hd�����!%���0Л~���j�</code>���$��T��56���c
+��I����2Umd��{s��.=�ڠ@	|�'N�LdU</p>
+</div>
+<div class="paragraph data-line-753">
+<p>����.��t ��p�����,3�<mark>�͸��V�/9�����'O��[�"%��}}����8�ɺ&amp;_K����#ૠ�#�f|&amp;��z u�0�(J��Y^,��@�GO�ɓ'yڹW��'�Gk�5�~�T�%!e�g�[�8?�M�E�l���,�H��D��6��,*Ls�g;7�:z�3�w�I�������C�q	팤983ے�����nGAb�V7�!���m"�H�Ť���717I-��r|9���䢸E- 	��.,��3�:YYؘ�wYo��%���M)�XGu�7��v��լ|O���;-Z��j\W��_���v��/�_��u
+��m��\눻ۉۙ�^</mark>�I$��GB�,�HXr�1�3"!-Z۬K���ȴ��{�����ߓ������Toii�Ȑ�ҍSߴ�k]��aJp`��i�10���2}�<strong>��*Z|<sup>�����</sup>�ϡ,�G�I�$�Q|�B����a��
+���<code>1�&amp;�k�ر�Q��wd�C��T3� �V�i��J���Q��]Ϳ��
+PEY��{�.�!���Q�V����W���t�I�? ��҃�]���������9y��n�9��3�k|,4���LǨ(/��Ͳf������uj</strong>� [� E=S�g��\�"3�Qs�puFpq;�O��ّH�̵e��%[q�:��<strong>o�
+�Z��U;^��ݺ������\gjIȤ����b��SU�zVn���=���F���/��Dp<mark>%��$9g�<em>1eɶ��W�"&gt;�o}�ԉ�ǿ��V��ν����e$~</em>��-z�X��q�����P'�6p�	�7���&gt;�O�{�	2�+ؕ�;'���sJ�2p�n�/���cn�Rn3p�������xM�&gt;i��4eN5����J���6�4
+&amp;��ә��GϠ�Լ������郋j</code>�\����VC�����:8�wdr���8�<sub>d</sub>��٣��щ�����:��S��Ggg�3j`&amp;�F�Ggf
+�ms�3�n&lt;6y�����DT
+�����,L%�$�z���Au���Ʌ�&amp;'ԍsG�ˢ�'U�����ѥ8윛�B&amp;dJY�
+��Y���RU�m����5�ptf�Z����^�..NE�-�����j�
+�jhVmVCj-޽�}�ZS�������54��/-̪���^54���Uo\ސ`A]4G�D4C�t�I� �S9`-U��U
+,���Q� EA�(�q�#4��{I�?l�G��]��Y:
+|X�&amp;(�Us�</strong>��
+als��0:��,���J�7s�h�
+.3�p�m�'}Ď���k���E��T�k�S��:��JWclk����E�{���V
+k\�U�1��tb�I���<strong>k��X3��qK^l��</strong>�\l��=/�e��v5W5��e�Gߌf���(v���c�x�i=�B�)�98��V�25�m��a/��%� ��x�<strong>��k�<sup>��x�J���)��e�����x�Jl\������7��b�v3�H�1��=E4N�HZ�C����</strong>��o9����/���;\��:���rfZ��G%v���F�j����0.cJf��La-U�.�gƐP�Y$$;bdј��M��i)�<strong>3sF�|5��J��,�Q}�$"m</sup>j1ap�cv��uݚ.�%.㟫W��i%���s�v��H�~�&gt;}�K��3l� {3��/��	��Kɖ]t�y,�</strong>((���ST�L�J�����9��y%| |?{����&lt;�7*��d=\���tj!�Ī�����Qu͒���
+-�
+�EI�W�y)բ����=!�p\�M�O�t�����3�#M�rFb3��m
+�D
+&gt;327�y�p���󂤘�{N�cQ���s��=/��G�u�~!� }#讔1v)i&amp;���Iم�J�
+�.q[�e�/buU�Y4�J�raK��Url̰�.s�Լp�����{�t��(sw���	�2���3�yaUDoG6l�"e:r�Λ/�Ax�I'N��S�%����&lt;�ʸ�������|7�V�/�S�B�5bq^�4,e73Ә߂���Kk����
+�
+endstream
+endobj
+36 0 obj
+&lt;&lt;
+/Length 3161
+/Length1 6156
+/Filter /FlateDecode
+&gt;&gt;
+stream
+x��W{pT�?�w���f�dw�d���n��$��$AA!&lt;�A,�$�&amp;��,�2L-Ԏ�R�ԱS��j�ZĎ���UkǖAv��鈼���w�6���t:�?̗���u��;�|�^bD�KH����x�a�FtC�1��v��Q�B����ؚ~��z1v�����n�x�������՛\Ӵ��]"����wu�c9'y s� ���n������Y۱��'��L��d[o��ye,Id��4��o���Fo�{���4�I�C���[���P�E=�ڲk�{�����Io�6e��S)gv��S�����$����Ub�d}���9��	McM�.*dP��	|���c��TʾGl�������_�o%#_DW�%���R;&gt;���I��4��!��&amp;�Q�U͗`�0�G�a�K�a�u�����Y
+@����$�j��
+�Jv�����Y��4Aj��m��a�����D�{�`�/���Y�t?�.�1����&lt;g;�����&lt;oĹ_ƺs�^�b&lt;�?&amp;��
+�����EQ)AF	�%��RD�źA�����j���?���P���4߀�o�[@��4���?�����v
+�)�Om\����^i&gt;��Q_
+��I����G�p&lt;��&lt;O����U?M���v�6o �J`��=
+{�4�͔�M�����-�4T�5��7�d�AuR3�Ph�p�3|���#�w���Iӥ�!��3����Y1�8�]�HǿN�Ј,01���0�E�ָ8�||-l�F�hֹ�k9yq׹����9�I���Q\�q��8G��e����$�Ƿb�Fp��"א�"�.��^��B�q9��ji:����'�C�o�U�	jF�mo��:����4aD����J*���Z���<em>�Q���ϵ:� �E.�EM\��Pv�a��
+�[B�b�h</em>��wt�(�u�<code>�|3eKU��<em>B~�m����&gt;��/���� (�a�(
+��y6�ƀ���m�g���Xyp�</mark>�Yv ���������[1&amp;�{��̻N� �(���}���%�����MY�A�+pOg���ӳ��
+���X��g�,�f�9l�d�������<mark>�</em>�O�%�(�l�|�ؕbţx�R�4*S���<sup>/�Z��b��;�;�{�7</sup>���\U�s���LfN�a~6�Y�Md��|���d	�p�W��66xN*��K)Q�������TU�X}Y=�P_T_P��{�g�gԧէ�=�n�	����j~�</mark>�8e��ȅ�/�������s�����
+���;�M�?V{t��iG��t��h�h�G�?:w�&gt;��˟~���o���}L��T����&amp;�o�ѝ۫���+</code>���Fk;���h�������·��&amp;�����Ɋ���!rڹ�{���<mark>�l]q��]���To��O�c�M�SR���78���P���ay}����k�{
+�2�|^�$ɚ�fM�jA�<code>���@iU�B�Mhk�<em>��7i����gB?���j���Q�7��ӭٲ�<strong>���K�P���Ú������ga�����r�� ��-:�</strong>�͇�ŕ쀫\��O����\&gt;vaWq�,W����粱��UZ�}�g`g'�5������t�PX
+��
+�^��^�f���_t�O��P���ga�%k�c9cv��[wfMN�G���1���,����O�U.�,��r��.��K�;��"�ώp������g�§l�E��Y�A�L�4,d|���U�|P�d�zcyx���y]V1��ܼ�O�yy���=�<strong>����J���;=�)k�Y������\"K,�L���L��g��~��&gt;��E�0��5H�n)�c���y���M��\�S��j��gqy+��[��Q�b���9+mٕg`G�6Y��</strong>�e�0 ^S(��b|�i���@�Z*����UU%��fw��<strong>��},+N��S�e�3U�,��X.�1:�jp�F��0�cr��'��@�'���Lut8�ԓ��A&amp;�Q�&lt;�na� o��D���m˖m{��e�e��=��xǼ-{����ޱ���;�ر㋋8�;�nyQ�Ϧ�Z��:r\����,�zX�S���,���C�H4�\�O��ۜofoY��ˋ,��.��T���-��e�%��R�f���4f�$7��2���4X�y��2yI��'�ys��u�l�V�N�Zbi-�wkuhw@X�|�"������լԜ���	�ȝg�Y�ZfT!yS</strong>��j</code>��G��99���;&lt;����)߆Uh5hD���?3���)`IG�?du[l�M%v������^�[w�\S�]k�t�cdyLA�W���7���.Y���8�&amp;�
+|E�Ob�E��jO�F��.���ez��m4�0��=?�lv�{|n�3ud</em>:Q�3_H�]6c��96�&amp;��Y.��\��8��ZZ渏���r�]���B���lj��tـ��t9���.����벙��=-[��m_ Y�����9-32�9���
+�T�%|+u�r���t9����t�@%R�.�R1�Ӳ��R�.��"�P�-Ԑ�뚾��ݝ]Ie���)sc�X"�Q��zcJUw��or��{��ou| �l��;A�Nv)������x��җHbao\	\ӝ�-ޣ��x窞�@]��6�tݵ��mJ�W�iMѵ�����&gt;�R[����m}��b �4��n��%;�=�+B�	�Շ£�u�����eX��=�vza_Gr(6W����O�8���%�WΜ���'ғg�'LP.yZT����b���XwOlEO&lt;
+RLi��@�%��d����f�m��?9��	�
+t��k��5</mark>}=t
+�Q?���N�$&gt;v�BTKu�Uh.���(N=���PV%�{Lo�6Hm�Vc� ���B辰4�0#	+
+�btP��Z��P�%4�s����OX�M�&lt;Z;t�*H1�RK�h!j���Z�\H��/[�9�\6�X�l3�Oʨ���B��j�\���̤v�N4�"Ha&lt;ؚ4�n��bNz{��
+�K�	av=~���߯�Ðւ�!���Dz!�HC��xz��
+zB����*mw���E0���I���!��N�v�=j���T����h�<mark>��p�d��
+��GeRL�;�hr��E'�U</mark>^ij4DD~��o����c ���������z�_a�t�
+endstream
+endobj
+xref
+0 37
+0000000000 65535 f
+0000000015 00000 n
+0000000294 00000 n
+0000000064 00000 n
+0000000357 00000 n
+0000000771 00000 n
+0000001144 00000 n
+0000001183 00000 n
+0000001226 00000 n
+0000001269 00000 n
+0000001668 00000 n
+0000002064 00000 n
+0000002461 00000 n
+0000002857 00000 n
+0000003556 00000 n
+0000003699 00000 n
+0000003839 00000 n
+0000006583 00000 n
+0000007286 00000 n
+0000007426 00000 n
+0000007568 00000 n
+0000012207 00000 n
+0000012686 00000 n
+0000013102 00000 n
+0000013514 00000 n
+0000013876 00000 n
+0000014287 00000 n
+0000014690 00000 n
+0000015022 00000 n
+0000015397 00000 n
+0000015592 00000 n
+0000015793 00000 n
+0000015986 00000 n
+0000016180 00000 n
+0000026450 00000 n
+0000030475 00000 n
+0000039574 00000 n
+trailer
+&lt;&lt;
+/Size 37
+/Root 1 0 R
+/Info 3 0 R
+/ID [&lt;105C47F267F74647791F1C1E6328FCC9&gt; &lt;105C47F267F74647791F1C1E6328FCC9&gt;]
+&gt;&gt;
+startxref
+42825
+%%EOF</p>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-07-09 13:37:47 +0700
+</div>
+</div>
+</body>
+</html>

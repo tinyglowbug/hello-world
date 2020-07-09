@@ -1,0 +1,106 @@
+....
+title: "Getting Started"
+date: "2020-05-22"
+document type: "21"
+author: "Shindy Farrahdiba"
+summary: "membantumu mengenal hal-hal dasar yang penting untuk dipahami saat memakai Alterra Knowledge Base"
+....
+
+== Getting Started
+
+Selamat Datang di Knowledge Base Alterra!
+
+_platform_ ini dikelola oleh tim Technical Writer untuk mendukung
+departemen *Agile Management Office* (AMO) dari divisi Tech mengelola
+semua dokumentasi di Alterra memastikan *_single source of truth_*.
+
+Kamu pasti ingin secepatnya menelusuri dan menggunakan situs ini, karena
+itu laman ini dibuat untuk membantumu mengenal hal-hal dasar yang
+penting untuk dipahami.
+
+Yuk, kita mulai dari:
+
+=== Cara Login
+
+[arabic]
+. Login ke dalam Knowledge Base Alterra
+image:/Users/shindy/Downloads/Getting-Started/images/Screen%20Shot%202020-04-28%20at%2017.10.44.png[image]
+. Klik tombol ``Login with Email'' dan hubungkan Knowledge Base Alterra
+dengan e-mail Google milikmu
+image:/Users/shindy/Downloads/Getting-Started/images/Screen%20Shot%202020-04-28%20at%2017.16.45.png[image]
+. Selanjutnya, proses akan dibawa kembali menuju homepage Knowledge Base
+Alterra. Sekarang kamu sudah bisa berselancar mencari informasi.
+
+=== Cara Mencari Informasi
+
+Ada dua cara kamu menemukan informasi atau dokumen yang dibutuhkan,
+yaitu:
+
+[arabic]
+. Klik salah satu menu folder di homepage
++
+atau
+. _Search_ melalui kotak pencarian di *Home* & masukkan kata kunci ke
+dalam kotak pencarian
++
+image:/Users/shindy/Downloads/Getting-Started/images/Screen%20Shot%202020-04-30%20at%2013.40.30.png[image]
+. Setelah memasukkan kata kunci, tekan tombol *Enter* atau klik tombol
+pencarian
+. Hasil pencarianmu tampil di bawah kotak pencarian
+. Klik judul untuk membuka file.
+
+image:/Users/shindy/Downloads/Getting-Started/images/Screen%20Shot%202020-04-28%20at%2017.22.18.png[Uploading
+file…_fzvsmad6n]
+
+=== Kata Kunci/Dokumentasi Tidak Ada
+
+Jika kata kunci/dokumentasi yang kamu ketikkan tidak cocok dengan
+informasi atau dokumen yang ada, akan muncul gambar di bawah ini.
+
+image:/Users/shindy/Downloads/Getting-Started/images/image-20200428-014205.jpg[image]
+
+Catatan: tombol merah ``Request Documentation'' bisa kamu pakai untuk
+permintaan membuat dokumentasi.
+
+=== Cara Request Akses
+
+Tidak semua dokumentasi di Knowledge Base Alterra Ibis bisa diakses. Ada
+dokumen yang berlabel ``rahasia'' atau dikhususkan untuk departemen
+tertentu.
+
+image:/Users/shindy/Downloads/Getting-Started/images/image-20200428-014218.jpg[image]
+
+Kamu bisa meminta izin untuk akses dengan meng-klik "*Request access"*,
+lalu ia akan otomatis diarahkan ke _draft_ email yang akan dikirim ke
+thoth@alterra.id (email tim Technical Writer)
+
+image:/Users/shindy/Downloads/Getting-Started/images/image-20200428-014337.jpg[image]
+
+Pada bagian *to* *(email), CC* lead kamu sebagai _approval request._
+Jika yang diminta adalah dokumen dari tim lain, maka selain mencantumkan
+*CC lead-nya,* kamu juga harus *CC lead tim lain yang dituju.*
+
+=== Cara Membagikan Informasi
+
+Informasi yang terdapat di dalam Knowledge Base bersifat informatif dan
+dapat dibagikan kepada rekan kerjamu.
+
+[arabic]
+. Silakan pilih halaman konten informasi yang ingin dibagikan. Geser
+kursor ke bawah sampai di bagian akhir informasi. Di bagian *Share this
+Article*, pilih mau berbagi lewat Telegram atau E-Mail.
+
+image:/Users/shindy/Downloads/Getting-Started/images/Screen%20Shot%202020-04-29%20at%2020.44.17.png[image]
+
+=== Bagaimana caranya saya bisa berkontribusi?
+
+Knowledge Base Alterra ini juga menyediakan ruang untuk kamu memberi
+_feedback_ pada kolom komentar di setiap dokumen atau langsung melalui
+email thoth@alterra.id.
+
+Kamu juga dapat mendaftar langsung menjadi kontributor
+link:Become-a-Contributor.md[di sini]
+
+=== Hubungi Kami
+
+Sampaikan pertanyaan dan masukkanmu ke email kami thoth@alterra.id.

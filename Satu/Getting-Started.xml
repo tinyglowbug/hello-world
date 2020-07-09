@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Getting Started</title>
+<date>2020-07-09</date>
+</info>
+<screen role="data-line-1" linenumbering="unnumbered">title: "Getting Started"
+date: "2020-05-22"
+document type: "21"
+author: "Shindy Farrahdiba"
+summary: "membantumu mengenal hal-hal dasar yang penting untuk dipahami saat memakai Alterra Knowledge Base"</screen>
+<section xml:id="_getting_started" role="data-line-11">
+<title>Getting Started</title>
+<simpara role="data-line-13">Selamat Datang di Knowledge Base Alterra!</simpara>
+<simpara role="data-line-15"><emphasis role="strong">platform</emphasis> ini dikelola oleh tim Technical Writer untuk mendukung departemen <emphasis role="strong">Agile Management Office</emphasis> (AMO) dari divisi Tech mengelola semua dokumentasi di Alterra memastikan <emphasis role="strong"><emphasis role="strong">single source of truth</emphasis></emphasis>.</simpara>
+<simpara role="data-line-17">Kamu pasti ingin secepatnya menelusuri dan menggunakan situs ini, karena itu laman ini dibuat untuk membantumu mengenal hal-hal dasar yang penting untuk dipahami.</simpara>
+<simpara role="data-line-19">Yuk, kita mulai dari:</simpara>
+<section xml:id="_cara_login" role="data-line-21">
+<title>Cara Login</title>
+<orderedlist role="data-line-23" numeration="arabic">
+<listitem role="data-line-23">
+<simpara>Login ke dalam Knowledge Base Alterra
+![](/Users/shindy/Downloads/Getting-Started/images/Screen Shot 2020-04-28 at 17.10.44.png)</simpara>
+</listitem>
+<listitem role="data-line-29">
+<simpara>Klik tombol "Login with Email" dan hubungkan Knowledge Base Alterra dengan e-mail Google milikmu
+![](/Users/shindy/Downloads/Getting-Started/images/Screen Shot 2020-04-28 at 17.16.45.png)</simpara>
+</listitem>
+<listitem role="data-line-35">
+<simpara>Selanjutnya, proses akan dibawa kembali menuju homepage Knowledge Base Alterra. Sekarang kamu sudah bisa berselancar mencari informasi.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_cara_mencari_informasi" role="data-line-38">
+<title>Cara Mencari Informasi</title>
+<simpara role="data-line-39">Ada dua cara kamu menemukan informasi atau dokumen yang dibutuhkan, yaitu:</simpara>
+<orderedlist role="data-line-41" numeration="arabic">
+<listitem role="data-line-41">
+<simpara>Klik salah satu menu folder di homepage</simpara>
+<literallayout role="data-line-43" class="monospaced">atau</literallayout>
+</listitem>
+<listitem role="data-line-45">
+<simpara><emphasis role="strong">Search</emphasis> melalui kotak pencarian di <emphasis role="strong">Home</emphasis> &amp; masukkan kata kunci ke dalam kotak pencarian</simpara>
+<literallayout role="data-line-47" class="monospaced">![](/Users/shindy/Downloads/Getting-Started/images/Screen Shot 2020-04-30 at 13.40.30.png)</literallayout>
+</listitem>
+<listitem role="data-line-51">
+<simpara>Setelah memasukkan kata kunci, tekan tombol <emphasis role="strong">Enter</emphasis> atau klik tombol pencarian</simpara>
+</listitem>
+<listitem role="data-line-53">
+<simpara>Hasil pencarianmu tampil di bawah kotak pencarian</simpara>
+</listitem>
+<listitem role="data-line-55">
+<simpara>Klik judul untuk membuka file.</simpara>
+</listitem>
+</orderedlist>
+<simpara role="data-line-57">![Uploading file&#8230;&#8203;_fzvsmad6n](/Users/shindy/Downloads/Getting-Started/images/Screen Shot 2020-04-28 at 17.22.18.png)</simpara>
+</section>
+<section xml:id="_kata_kuncidokumentasi_tidak_ada" role="data-line-64">
+<title>Kata Kunci/Dokumentasi Tidak Ada</title>
+<simpara role="data-line-65">Jika kata kunci/dokumentasi yang kamu ketikkan tidak cocok dengan informasi atau dokumen yang ada, akan muncul gambar di bawah ini.</simpara>
+<simpara role="data-line-67">![](/Users/shindy/Downloads/Getting-Started/images/image-20200428-014205.jpg)</simpara>
+<simpara role="data-line-69">Catatan: tombol merah "Request Documentation" bisa kamu pakai untuk permintaan membuat dokumentasi.</simpara>
+</section>
+<section xml:id="_cara_request_akses" role="data-line-73">
+<title>Cara Request Akses</title>
+<simpara role="data-line-75">Tidak semua dokumentasi di Knowledge Base Alterra Ibis bisa diakses. Ada dokumen yang berlabel "rahasia" atau dikhususkan untuk departemen tertentu.</simpara>
+<simpara role="data-line-77">![](/Users/shindy/Downloads/Getting-Started/images/image-20200428-014218.jpg)</simpara>
+<simpara role="data-line-79">Kamu bisa meminta izin untuk akses dengan meng-klik "<emphasis role="strong">Request access"</emphasis>, lalu ia akan otomatis diarahkan ke <emphasis role="strong">draft</emphasis> email yang akan dikirim ke [<link xl:href="mailto:thoth@alterra.id">thoth@alterra.id</link>](mailto:thoth@alterra.id) (email tim Technical Writer)</simpara>
+<simpara role="data-line-81">![](/Users/shindy/Downloads/Getting-Started/images/image-20200428-014337.jpg)</simpara>
+<simpara role="data-line-83">Pada bagian <emphasis role="strong">to</emphasis> <emphasis role="strong">(email), CC</emphasis> lead kamu sebagai <emphasis role="strong">approval request.</emphasis> Jika yang diminta adalah dokumen dari tim lain, maka selain mencantumkan <emphasis role="strong">CC lead-nya,</emphasis> kamu juga harus <emphasis role="strong">CC lead tim lain yang dituju.</emphasis></simpara>
+</section>
+<section xml:id="_cara_membagikan_informasi" role="data-line-87">
+<title>Cara Membagikan Informasi</title>
+<simpara role="data-line-89">Informasi yang terdapat di dalam Knowledge Base bersifat informatif dan dapat dibagikan kepada rekan kerjamu.</simpara>
+<orderedlist role="data-line-91" numeration="arabic">
+<listitem role="data-line-91">
+<simpara>Silakan pilih halaman konten informasi yang ingin dibagikan. Geser kursor ke bawah sampai di bagian akhir informasi. Di bagian <emphasis role="strong">Share this Article</emphasis>, pilih mau berbagi lewat Telegram atau E-Mail.</simpara>
+</listitem>
+</orderedlist>
+<simpara role="data-line-93">![](/Users/shindy/Downloads/Getting-Started/images/Screen Shot 2020-04-29 at 20.44.17.png)</simpara>
+</section>
+<section xml:id="_bagaimana_caranya_saya_bisa_berkontribusi" role="data-line-97">
+<title>Bagaimana caranya saya bisa berkontribusi?</title>
+<simpara role="data-line-99">Knowledge Base Alterra ini juga menyediakan ruang untuk kamu memberi <emphasis role="strong">feedback</emphasis> pada kolom komentar di setiap dokumen atau langsung melalui email [<link xl:href="mailto:thoth@alterra.id">thoth@alterra.id</link>](mailto:thoth@alterra.id).</simpara>
+<simpara role="data-line-101">Kamu juga dapat mendaftar langsung menjadi kontributor [di sini](Become-a-Contributor.md)</simpara>
+</section>
+<section xml:id="_hubungi_kami" role="data-line-105">
+<title>Hubungi Kami</title>
+<simpara role="data-line-107">Sampaikan pertanyaan dan masukkanmu ke email kami [<link xl:href="mailto:thoth@alterra.id">thoth@alterra.id</link>](mailto:thoth@alterra.id).</simpara>
+</section>
+</section>
+</article>
